@@ -28,7 +28,7 @@ def powr(b, exp):
 #-----------------------------------------------------------------Introduction--
 
 def powr(b, exp):
-    binStng = str(bin(exp))[2:] # Change integer exp to a binary string.
+    binStng = bin(exp)[2:] # Change integer exp to a binary string.
     revStng = reversed(binStng) # Reverse the digits (alt. = binStng[::-1]).
     product  = 1
     for ch in revStng:
